@@ -1,0 +1,7 @@
+.about {
+    background-image: url('/assets/images/bnr3.jpg');
+    background-color: rgba(116, 116, 116, 15);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+}

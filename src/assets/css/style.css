@@ -632,7 +632,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .testimonals h3,.team h3{
 	font-family: 'Play-Bold';
   font-size: 1.8em;
-  color: #f43c60;
+  color: #e2f43c;
   margin-bottom:0.7em;
 }
 .testimonal-grid:first-child {
@@ -660,9 +660,9 @@ ul.callbacks_tabs.callbacks1_tabs {
 	margin-top:15px;
 }
 .testi-info a{
-	color:#f43c60;
+	color:#e2f43c;
 	text-decoration:none;
-	font-size: 0.75em;
+	font-size: 0.95em;
 	font-weight:600;
 }
 .testi-info a:hover{
