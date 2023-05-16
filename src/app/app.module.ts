@@ -9,6 +9,10 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NosotrosComponent } from './components/pages/nosotros/nosotros.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { ProductosComponent } from './components/pages/productos/productos.component';
+import { ContactoComponent } from './components/pages/contacto/contacto.component';
+import { AdminsComponent } from './components/pages/admins/admins.component';
+import { EfxComponent } from './components/others/efx/efx.component';
+import { NeonComponent } from './components/others/neon/neon.component';
 
 
 @NgModule({
@@ -20,6 +24,10 @@ import { ProductosComponent } from './components/pages/productos/productos.compo
     NosotrosComponent,
     LoginComponent,
     ProductosComponent,
+    ContactoComponent,
+    AdminsComponent,
+    EfxComponent,
+    NeonComponent,
 
   ],
   imports: [
