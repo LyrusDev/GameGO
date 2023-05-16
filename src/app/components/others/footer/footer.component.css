@@ -1,0 +1,33 @@
+
+  .carousel-container {
+    position: relative;
+  }
+
+  .carousel-slide {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    height: 300px;
+    padding: 0.2rem;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00ff00;
+  }
+
+  .carousel-slide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-slide img {
+    scroll-snap-align: start;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+  }
+
+  .carousel-slide img:not(:last-child) {
+    margin-right: 0.2rem;
+  }
+

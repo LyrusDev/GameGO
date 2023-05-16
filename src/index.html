@@ -23,7 +23,6 @@
 </head>
 
 <body>
-	
 	<app-root></app-root>
 </body>
 
@@ -85,3 +84,33 @@
 		});
 	</script>
 	<script type="text/javascript" src="/assets/js/jquery.flexisel.js"></script>
+
+<!-- carrusel -->
+  <script>
+
+    const carouselSlide = document.querySelector(".carousel-slide");
+    const carouselImages = document.querySelectorAll(".carousel-slide img");
+
+    const slideWidth = carouselImages[0].clientWidth;
+    let currentIndex = 0;
+    let timer = setInterval(() => {
+      currentIndex++;
+      if (currentIndex >= carouselImages.length) {
+        currentIndex = 0;
+      }
+      carouselSlide.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+    }, 1000);
+
+
+    const firstImage = carouselImages[0];
+    const lastImage = carouselImages[carouselImages.length - 1];
+    const clonedFirst = firstImage.cloneNode(true);
+    const clonedLast = lastImage.cloneNode(true);
+    carouselSlide.appendChild(clonedFirst);
+    carouselSlide.insertBefore(clonedLast, firstImage);
+
+
+    carouselSlide.style.width = `${slideWidth * (carouselImages.length + 2)}px`;
+    carouselSlide.style.transform = `translateX(${-slideWidth}px)`;
+
+  </script>

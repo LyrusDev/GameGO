@@ -1,0 +1,54 @@
+.review {
+  background-image: url('src/assets/images/bnr3.jpg');
+  background-color: rgba(116, 116, 116, 0.6);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center center;
+}
+
+.shop-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  color: #666;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.card-price {
+  font-weight: bold;
+}
+
+.btn-add-to-cart {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
