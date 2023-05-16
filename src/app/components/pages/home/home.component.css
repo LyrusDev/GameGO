@@ -1,0 +1,27 @@
+.color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game-title {
+    font-size: 5em;
+    text-transform: uppercase;
+    animation: color-animation 2s infinite;
+  }
+  
+  @keyframes color-animation {
+    0% {
+      color: #ff385c;
+    }
+    25% {
+      color: #0c0b08;
+    }
+    50% {
+      color: #ffe600;
+    }
+    75% {
+      color: #00e8ff;
+    }
+  }
+  
