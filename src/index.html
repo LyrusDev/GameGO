@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
 	<app-root></app-root>
 </body>
 
@@ -57,33 +56,61 @@
 <!-- barra-url -->
 <script
 	type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- content -->
-<script type="text/javascript">
-	$(window).load(function () {
-		$("#flexiselDemo1").flexisel({
-			visibleItems: 4,
-			animationSpeed: 1000,
-			autoPlay: true,
-			autoPlaySpeed: 3000,
-			pauseOnHover: true,
-			enableResponsiveBreakpoints: true,
-			responsiveBreakpoints: {
-				portrait: {
-					changePoint: 480,
-					visibleItems: 1
-				},
-				landscape: {
-					changePoint: 640,
-					visibleItems: 2
-				},
-				tablet: {
-					changePoint: 768,
-					visibleItems: 3
+	<!-- content -->
+	<script type="text/javascript">
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 4,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 3
+					}
 				}
-			}
+			});
 		});
-	});
-</script>
+	</script>
+	<script type="text/javascript" src="/assets/js/jquery.flexisel.js"></script>
+
+<!-- carrusel -->
+  <script>
+
+    const carouselSlide = document.querySelector(".carousel-slide");
+    const carouselImages = document.querySelectorAll(".carousel-slide img");
+
+    const slideWidth = carouselImages[0].clientWidth;
+    let currentIndex = 0;
+    let timer = setInterval(() => {
+      currentIndex++;
+      if (currentIndex >= carouselImages.length) {
+        currentIndex = 0;
+      }
+      carouselSlide.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+    }, 1000);
 
 
-<script type="text/javascript" src="/assets/js/jquery.flexisel.js"></script>
+    const firstImage = carouselImages[0];
+    const lastImage = carouselImages[carouselImages.length - 1];
+    const clonedFirst = firstImage.cloneNode(true);
+    const clonedLast = lastImage.cloneNode(true);
+    carouselSlide.appendChild(clonedFirst);
+    carouselSlide.insertBefore(clonedLast, firstImage);
+
+
+    carouselSlide.style.width = `${slideWidth * (carouselImages.length + 2)}px`;
+    carouselSlide.style.transform = `translateX(${-slideWidth}px)`;
+
+  </script>

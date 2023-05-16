@@ -1,0 +1,60 @@
+
+<div class="carousel-container">
+  <div class="ca/assets/rousel-slide">
+      <img src="/assets/images/partner-1.jpg" alt="Slide 1">
+      <img src="/assets/images/partner-2.jpg" alt="Slide 2">
+      <img src="/assets/images/partner-3.jpg" alt="Slide 3">
+      <img src="/assets/images/partner-4.jpg" alt="Slide 4">
+      <img src="/assets/images/partner-5.jpg" alt="Slide 5">
+      <img src="/assets/images/partner-6.jpg" alt="Slide 6">
+      <img src="/assets/images/partner-7.jpg" alt="Slide 7">
+      <img src="/assets/images/partner-8.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-9.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-10.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-11.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-12.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-13.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-14.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-15.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-15.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-16.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-17.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-18.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-19.jpg" alt="Slide 8">
+      <img src="/assets/images/partner-20.jpg" alt="Slide 8">
+
+  </div>
+</div>
+
+
+
+<script>
+
+const carouselSlide = document.querySelector(".carousel-slide");
+const carouselImages = document.querySelectorAll(".carousel-slide img");
+
+// Configuración del carrusel
+const slideWidth = carouselImages[0].clientWidth;
+let currentIndex = 0;
+let timer = setInterval(() => {
+currentIndex++;
+if (currentIndex >= carouselImages.length) {
+  currentIndex = 0;
+}
+carouselSlide.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+}, 1000);
+
+// Clonar las imágenes para hacer el carrusel infinito
+const firstImage = carouselImages[0];
+const lastImage = carouselImages[carouselImages.length - 1];
+const clonedFirst = firstImage.cloneNode(true);
+const clonedLast = lastImage.cloneNode(true);
+carouselSlide.appendChild(clonedFirst);
+carouselSlide.insertBefore(clonedLast, firstImage);
+
+// Ajustar el ancho del carrusel
+carouselSlide.style.width = `${slideWidth * (carouselImages.length + 2)}px`;
+carouselSlide.style.transform = `translateX(${-slideWidth}px)`;
+
+</script>
+
