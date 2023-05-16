@@ -10,6 +10,9 @@ import { NosotrosComponent } from './components/pages/nosotros/nosotros.componen
 import { LoginComponent } from './components/pages/login/login.component';
 import { ProductosComponent } from './components/pages/productos/productos.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +23,12 @@ import { ProductosComponent } from './components/pages/productos/productos.compo
     NosotrosComponent,
     LoginComponent,
     ProductosComponent,
-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,62 @@
+{
+  "admins": [
+    {
+      "user": "x1",
+      "pass": "x11"
+    },
+    {
+      "user": "x2",
+      "pass": "x22"
+    },
+    {
+      "user": "x3",
+      "pass": "x33"
+    },
+    {
+      "user": "x4",
+      "pass": "x44"
+    },
+    {
+      "user": "x5",
+      "pass": "x55"
+    }
+  ],
+
+  "games": [
+    {
+      "id": 1,
+      "juego": "Children of the Corn IV: The Gathering",
+      "categoria": "Horror",
+      "precio": "$7.62",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2F326413.jpg?alt=media&token=c63bfe96-e872-46de-95fa-1a8f5d7a1460"
+    },
+    {
+      "id": 2,
+      "juego": "Me Myself I",
+      "categoria": "Comedy|Romance",
+      "precio": "$0.82",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2F512971.jpg?alt=media&token=b3603271-6333-4b39-a590-6171a21c078b"
+    },
+    {
+      "id": 3,
+      "juego": "Man on High Heels",
+      "categoria": "Action|Comedy",
+      "precio": "$8.58",
+      "imagen": "http://dummyimage.com/106x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 4,
+      "juego": "Lost in the Desert",
+      "categoria": "Adventure|Drama|Thriller",
+      "precio": "$2.09",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2F326413.jpg?alt=media&token=c63bfe96-e872-46de-95fa-1a8f5d7a1460"
+    },
+    {
+      "id": 5,
+      "juego": "Citizen Cohn",
+      "categoria": "Drama",
+      "precio": "$7.46",
+      "imagen": "http://dummyimage.com/123x100.png/ff4444/ffffff"
+    }
+  ]
+}

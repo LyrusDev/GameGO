@@ -14,17 +14,17 @@
 
     <section class="contenedor">
         <div class="box">
-            <form>
+            <form (ngSubmit)="login()">
                 <h2>Iniciar sesión</h2>
 
                 <div class="inputBox">
-                    <input type="text" required="required">
-                    <span>Usuario</span>
+                    <input type="text" id="user" name="user" required="required" [(ngModel)]="user">
+                    <span for="user">Usuario</span>
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input type="password" required="required">
-                    <span>Contraseña</span>
+                    <input type="password" id="pass" name="pass" required="required" [(ngModel)]="pass">
+                    <span for="pass">Contraseña</span>
                     <i></i>
                 </div>
 
