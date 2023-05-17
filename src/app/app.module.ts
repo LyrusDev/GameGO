@@ -14,6 +14,10 @@ import { AdminsComponent } from './components/pages/admins/admins.component';
 import { EfxComponent } from './components/others/efx/efx.component';
 import { NeonComponent } from './components/others/neon/neon.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ControlComponent } from './components/others/control/control.component';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +32,7 @@ import { NeonComponent } from './components/others/neon/neon.component';
     AdminsComponent,
     EfxComponent,
     NeonComponent,
+    ControlComponent,
 
   ],
   imports: [
