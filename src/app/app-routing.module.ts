@@ -5,21 +5,23 @@ import { NosotrosComponent } from './components/pages/nosotros/nosotros.componen
 import { LoginComponent } from './components/pages/login/login.component';
 import { ProductosComponent } from './components/pages/productos/productos.component';
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
-import { AdminsComponent } from './components/pages/admins/admins.component';
+import { ListaProdComponent } from './components/pages/lista-prod/lista-prod.component';
+import { LogOutComponent } from './components/pages/log-out/log-out.component';
+import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
 
-  { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'productos', component: ProductosComponent },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'admins', component: AdminsComponent },
+  { path: 'login', component: LoginComponent },
 
- 
+  // Administradores
+  { path: 'lista-prod', component: ListaProdComponent, canActivate: [LoginGuard] },
+  { path: 'log-out', component: LogOutComponent },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-
 ];
 
 @NgModule({

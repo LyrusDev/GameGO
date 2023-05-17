@@ -21,42 +21,90 @@
       "pass": "x55"
     }
   ],
-
   "games": [
     {
       "id": 1,
-      "juego": "Children of the Corn IV: The Gathering",
-      "categoria": "Horror",
-      "precio": "$7.62",
-      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2F326413.jpg?alt=media&token=c63bfe96-e872-46de-95fa-1a8f5d7a1460"
+      "juego": "Resident Evil 4 Remake",
+      "categoria": "Survival Horror",
+      "precio": "$49.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre1.jpg?alt=media&token=bd52e039-4395-4ec9-b0b3-ef43bb970a5a"
     },
     {
       "id": 2,
-      "juego": "Me Myself I",
-      "categoria": "Comedy|Romance",
-      "precio": "$0.82",
-      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2F512971.jpg?alt=media&token=b3603271-6333-4b39-a590-6171a21c078b"
+      "juego": "Elden Ring",
+      "categoria": "Action RPG",
+      "precio": "$59.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre2.jpg?alt=media&token=f24dd77a-1990-4853-b8de-792ef0d92e6d"
     },
     {
       "id": 3,
-      "juego": "Man on High Heels",
-      "categoria": "Action|Comedy",
-      "precio": "$8.58",
-      "imagen": "http://dummyimage.com/106x100.png/ff4444/ffffff"
+      "juego": "Dota 2",
+      "categoria": "MOBA",
+      "precio": "$29.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre3.jpg?alt=media&token=31e72cc0-33a6-4267-ad40-b14997b5160e"
     },
     {
       "id": 4,
-      "juego": "Lost in the Desert",
-      "categoria": "Adventure|Drama|Thriller",
-      "precio": "$2.09",
-      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2F326413.jpg?alt=media&token=c63bfe96-e872-46de-95fa-1a8f5d7a1460"
+      "juego": "League of Legends",
+      "categoria": "MOBA",
+      "precio": "$39.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre4.jpg?alt=media&token=6d3dbac5-aa47-4b5d-9568-ce3849558af9"
     },
     {
       "id": 5,
-      "juego": "Citizen Cohn",
-      "categoria": "Drama",
-      "precio": "$7.46",
-      "imagen": "http://dummyimage.com/123x100.png/ff4444/ffffff"
+      "juego": "Hogwarts Legacy",
+      "categoria": "Action RPG",
+      "precio": "$39.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre5.jpg?alt=media&token=01ca3464-7877-429d-aef1-dae679241559"
+    },
+    {
+      "id": 6,
+      "juego": "Horizon: Forbidden West",
+      "categoria": "Action RPG",
+      "precio": "$59.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre6.jpg?alt=media&token=4a48623b-6407-4ab1-ac2d-1ba0b01bcb70"
+    },
+    {
+      "id": 7,
+      "juego": "Star Wars Jedi Survivor",
+      "categoria": "Action RPG",
+      "precio": "$49.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre7.jpg?alt=media&token=188a80f4-e02d-4dd4-98b3-fb1ff010efa9"
+    },
+    {
+      "id": 8,
+      "juego": "Destiny 2",
+      "categoria": "Shooter en primera persona",
+      "precio": "$49.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre8.jpg?alt=media&token=9ebc7cd1-08a2-4598-b5c5-7135078b2a82"
+    },
+    {
+      "id": 9,
+      "juego": "Street Fighter 6",
+      "categoria": "Juego de lucha",
+      "precio": "$49.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre9.jpg?alt=media&token=3bf8bc82-bb90-42d5-9a1c-b307abcd0917"
+    },
+    {
+      "id": 10,
+      "juego": "Assassin's Creed",
+      "categoria": "Mundo abierto",
+      "precio": "$29.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre10.jpg?alt=media&token=f11de044-d047-419a-af97-060bdd114c08"
+    },
+    {
+      "id": 11,
+      "juego": "Grand Theft Auto V",
+      "categoria": "Acción-aventura",
+      "precio": "$39.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre11.jpg?alt=media&token=ad144022-0f92-4ee0-9f98-16b8045b81fb"
+    },
+    {
+      "id": 12,
+      "juego": "The Last of Us",
+      "categoria": "Supervivencia",
+      "precio": "$49.99",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/game-go-b4bbc.appspot.com/o/img%2Fre12.jpg?alt=media&token=7000194d-5296-4eca-8f87-990e41cee136"
     }
   ]
 }

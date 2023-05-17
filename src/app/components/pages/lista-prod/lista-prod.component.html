@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Nav Admins -->
+    <app-nav-admin></app-nav-admin>
+
+    <div class="container">
+        <h2>Control de Inventario</h2>
+        <div class="pull-right">
+            <button mat-raised-button color="accent" class="btn-agre" (click)="agregarProducto()">Agregar</button>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Juego</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of dataProductos">
+                    <td>{{item.id}}</td>
+                    <td>{{item.juego}}</td>
+                    <td>{{item.categoria}}</td>
+                    <td>{{item.precio}}</td>
+                    <td></td>
+                    <td>
+                        <button mat-icon-button color="primary" (click)="editarProducto(item)">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                        <button mat-icon-button color="warn" (click)="eliminarProducto(item.id)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

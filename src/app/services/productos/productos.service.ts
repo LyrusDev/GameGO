@@ -22,7 +22,7 @@ export class ProductosService {
   }
 
   // PUT
-  putProductos(user: any, id: number): Observable<any> {
+  putProductos(id: number, user: any): Observable<any> {
     this.API_PRODUCTOS = `${this.API_PRODUCTOS}/${id}`
 
     return this.http.put(this.API_PRODUCTOS, user)

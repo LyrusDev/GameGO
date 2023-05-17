@@ -1,0 +1,49 @@
+<div mat-dialog-title>
+    <h1>Registro de Juego</h1>
+</div>
+
+<form [formGroup]="gameForm" (ngSubmit)="guardarJuego()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Id</mat-label>
+                <input matInput type="number" formControlName="id">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Juego</mat-label>
+                <input matInput type="text" formControlName="juego">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Categoria</mat-label>
+                <mat-select formControlName="categoria">
+                    <mat-option *ngFor="let cat of categoria" [value]="cat">
+                        {{cat}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Precio</mat-label>
+                <input matInput formControlName="precio">
+                <mat-hint>En dolares</mat-hint>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Imagen</mat-label>
+                <input matInput type="text" placeholder="Ej. www.google/imagen-x.com" formControlName="imagen">
+            </mat-form-field>
+        </div>
+
+    </div>
+
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancelar</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Actualizar': 'Guardar'}}</button>
+    </div>
+</form>

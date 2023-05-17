@@ -41,7 +41,7 @@ export class LoginComponent {
           localStorage.setItem('login', 'true')
 
           // Navegar
-          this.ruta.navigate(['/productos'])
+          this.ruta.navigate(['/lista-prod'])
 
           break;
         } else {

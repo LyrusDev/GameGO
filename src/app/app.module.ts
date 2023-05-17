@@ -10,12 +10,25 @@ import { NosotrosComponent } from './components/pages/nosotros/nosotros.componen
 import { LoginComponent } from './components/pages/login/login.component';
 import { ProductosComponent } from './components/pages/productos/productos.component';
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
-import { AdminsComponent } from './components/pages/admins/admins.component';
 import { EfxComponent } from './components/others/efx/efx.component';
 import { NeonComponent } from './components/others/neon/neon.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavAdminComponent } from './components/others/nav-admin/nav-admin.component';
+import { ListaProdComponent } from './components/pages/lista-prod/lista-prod.component';
+import { LogOutComponent } from './components/pages/log-out/log-out.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AgregarComponent } from './components/modales/agregar/agregar.component';
+
+// Angular material
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -28,16 +41,27 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     ProductosComponent,
     ContactoComponent,
-    AdminsComponent,
     EfxComponent,
     NeonComponent,
+    NavAdminComponent,
+    ListaProdComponent,
+    LogOutComponent,
+    AgregarComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

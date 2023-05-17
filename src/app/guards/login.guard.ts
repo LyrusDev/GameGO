@@ -18,8 +18,8 @@ export class LoginGuard implements CanActivate {
     if (acceso === 'true') {
       return true;
     } else {
-      // this.ruta.navigate(['/registro'])
-
+      this.ruta.navigate(['/home'])
+      
       return false;
     }
 
