@@ -4,6 +4,8 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NosotrosComponent } from './components/pages/nosotros/nosotros.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { ProductosComponent } from './components/pages/productos/productos.component';
+import { ContactoComponent } from './components/pages/contacto/contacto.component';
+import { AdminsComponent } from './components/pages/admins/admins.component';
 
 const routes: Routes = [
 
@@ -11,8 +13,10 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'productos', component: ProductosComponent },
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'admins', component: AdminsComponent },
 
-  // { path: '', component: HomeComponent },
+ 
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 
