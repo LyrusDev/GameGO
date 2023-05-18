@@ -8,6 +8,7 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
 import { ListaProdComponent } from './components/pages/lista-prod/lista-prod.component';
 import { LogOutComponent } from './components/pages/log-out/log-out.component';
 import { LoginGuard } from './guards/login.guard';
+import { ErrorComponent } from './components/pages/error/error.component';
 
 const routes: Routes = [
 
@@ -16,12 +17,14 @@ const routes: Routes = [
   { path: 'productos', component: ProductosComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'error', component: ErrorComponent },
 
   // Administradores
   { path: 'lista-prod', component: ListaProdComponent, canActivate: [LoginGuard] },
   { path: 'log-out', component: LogOutComponent },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/error' },
 ];
 
 @NgModule({
