@@ -6,7 +6,6 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { ProductosComponent } from './components/pages/productos/productos.component';
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
 import { ListaProdComponent } from './components/pages/lista-prod/lista-prod.component';
-import { LogOutComponent } from './components/pages/log-out/log-out.component';
 import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
@@ -19,7 +18,6 @@ const routes: Routes = [
 
   // Administradores
   { path: 'lista-prod', component: ListaProdComponent, canActivate: [LoginGuard] },
-  { path: 'log-out', component: LogOutComponent },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];

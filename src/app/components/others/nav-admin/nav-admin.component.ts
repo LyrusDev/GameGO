@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NavAdminComponent {
 
+  deslogeo() {
+    localStorage.setItem('login', 'false')
+  }
+
 }

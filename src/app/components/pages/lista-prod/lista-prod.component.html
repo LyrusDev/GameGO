@@ -35,7 +35,9 @@
                     <td>{{item.juego}}</td>
                     <td>{{item.categoria}}</td>
                     <td>{{item.precio}}</td>
-                    <td></td>
+                    <td>
+                        <img src="{{item.imagen}}" alt="">
+                    </td>
                     <td>
                         <button mat-icon-button color="primary" (click)="editarProducto(item)">
                             <mat-icon>edit</mat-icon>

@@ -17,7 +17,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavAdminComponent } from './components/others/nav-admin/nav-admin.component';
 import { ListaProdComponent } from './components/pages/lista-prod/lista-prod.component';
-import { LogOutComponent } from './components/pages/log-out/log-out.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgregarComponent } from './components/modales/agregar/agregar.component';
@@ -45,7 +44,6 @@ import { MatSelectModule } from '@angular/material/select';
     NeonComponent,
     NavAdminComponent,
     ListaProdComponent,
-    LogOutComponent,
     AgregarComponent,
 
   ],

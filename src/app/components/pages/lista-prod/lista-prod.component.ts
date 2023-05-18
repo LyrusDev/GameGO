@@ -48,7 +48,6 @@ export class ListaProdComponent {
         this.servicio.getProductos();
       },
       error: console.log,
-      
     })
   }
 
