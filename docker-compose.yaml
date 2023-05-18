@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  angular:
+    build: 
+      context: .
+      dockerfile: docker/Dockerfile
+    restart: always
+    image: game-go
+    ports:
+      - '127.0.0.1:8000:80'
+
+  json-server:
+    build: 
+      context: .
+      dockerfile: docker-server/Dockerfile
+    image: data-json
+    ports:
+      - '3000:3000'

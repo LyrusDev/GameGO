@@ -34,4 +34,6 @@ export class ProductosService {
 
     return this.http.delete(this.API_PRODUCTOS)
   }
+
+  
 }
