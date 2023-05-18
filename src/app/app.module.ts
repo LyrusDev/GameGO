@@ -29,6 +29,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { ControlComponent } from './components/others/control/control.component';
+import { ErrorComponent } from './components/pages/error/error.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { ControlComponent } from './components/others/control/control.component'
     ListaProdComponent,
     AgregarComponent,
     ControlComponent,
+    ErrorComponent,
 
   ],
   imports: [

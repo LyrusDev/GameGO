@@ -7,6 +7,7 @@ import { ProductosComponent } from './components/pages/productos/productos.compo
 import { ContactoComponent } from './components/pages/contacto/contacto.component';
 import { ListaProdComponent } from './components/pages/lista-prod/lista-prod.component';
 import { LoginGuard } from './guards/login.guard';
+import { ErrorComponent } from './components/pages/error/error.component';
 
 const routes: Routes = [
 
@@ -15,11 +16,13 @@ const routes: Routes = [
   { path: 'productos', component: ProductosComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'error', component: ErrorComponent },
 
   // Administradores
   { path: 'lista-prod', component: ListaProdComponent, canActivate: [LoginGuard] },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/error' },
 ];
 
 @NgModule({
